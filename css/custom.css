@@ -1,0 +1,426 @@
+@font-face{
+	font-family: 'Proxima Nova';
+	src: url(../fonts/Proxima-Nova-Extra-Condensed-Bold.otf);
+
+}
+@font-face{
+	font-family: 'Open Sans';
+	src:url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face{
+	font-family: 'Open Sans Semibold';
+	src:url(../fonts/OpenSans-Semibold.ttf);
+}
+
+h1, h2, h3, h5,.button{
+	font-family: 'Proxima Nova', Arial, Ubuntu, sans-serif;
+}
+.top-features,.form-control,a{
+	font-family: 'Open Sans Semibold', Arial, Ubuntu, sans-serif;
+}
+h4,h6{
+	font-family: 'Open Sans', Arial, Ubuntu, sans-serif;
+	font-weight: bold;
+}
+body
+{
+	background: url(../img/background.jpg) no-repeat center top;
+	-webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+	font-family: 'Open Sans', Arial, Ubuntu, sans-serif;
+	color:#333333;
+}
+/*Шапка*/
+header{
+	height: 100px;
+	margin-bottom: 75px;
+	margin-top: 15px;
+}
+.logo{
+	text-align: left;
+}
+/*социальные иконки в самом конце*/
+
+/*up buton*/
+.up{
+	width: 50px;
+	height: 21px;
+	position: fixed;
+	left:2%;
+	bottom: 2%;
+	padding: 0;
+	z-index: 99;
+	text-align: center;
+}
+
+.up:focus{
+	outline: none;
+}
+
+/*Лозунг и заголовок*/
+
+h1{
+	background: #0077cc;
+	color: white;
+	padding: 5px 15px;
+	display: inline-block;
+	font-size: 3em;
+	margin: 0px;
+}
+h2{
+	color: #0077cc;
+	font-size: 1.8em;
+	padding-left: 10px;
+}
+
+
+/*"Фичи"*/
+.top-features{
+	padding-left: 25px;
+	margin: 20px 0 20px 0;
+}
+.top-features>li{
+	padding-top: 5px;
+	font-size: 1.2em;
+}
+
+/*Select and go*/
+.form-control{
+	width: 230px;
+	height: 40px;
+	-webkit-appearance: none;
+	-moz-appearance: none;/* Не работает :( */
+	appearance:none;
+	background: url(../img/arrow.png) no-repeat #fff;
+	background-position: 95% 50%;
+	margin-right: 20px;
+	display: inline; 
+	border: 2px solid #d30027;
+	color:#333333;
+	border-radius: 0;
+}
+/*убираем долбаную стрелку в ИЕ*/
+select::-ms-expand {
+    display: none;
+}
+option{
+	color:#333333;
+}
+/*Кнопка перейти*/
+.button{
+	border: 2px solid #d30027;
+	width: 110px;
+	height: 38px;
+	color: #fff;
+	background-color: #d30027;
+	font-size: 1.4em;
+}
+.button:hover{
+	color:#d30027;
+	background-color: #fff;
+}
+.button:active{
+	color:#b30021;
+	background-color: #fff;
+	border: 2px solid #b30021;
+}
+form{
+	margin-bottom: 70px;
+}
+
+/*Разделитель стрелка вниз*/
+.arrow-divider{
+	background: url(../img/arrow-divider.png) no-repeat center;
+	height: 40px;
+	z-index: 99;
+}
+.divider{
+	position: absolute;
+	bottom: 0;
+	left:50%;
+}
+
+/*Школа*/
+h3{
+	font-size: 3.333em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 40px;
+}
+.black-hr{
+	border: none; /* Убираем границу для браузера Firefox */
+	color: #333333; /* Цвет линии для остальных браузеров */
+	background-color: #333333; /* Цвет линии для браузера Firefox и Opera */
+	height: 2px;
+	width: 200px;
+}
+.block-center{
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.block-center div{
+	margin: auto;
+}
+.block-center p{
+	z-index: 10;
+}
+.block-center .col-md-5{
+	z-index: 10;
+}
+h4{
+	color: #0077cc;
+	font-size: 18pt;
+}
+
+.block-center h4{
+	margin-bottom: 4%;
+}
+
+p{
+	font-size: 16pt;
+	text-align: left;
+}
+
+h4, h4+p{
+	padding-left: 2%;
+}
+
+
+
+/*2 pic*/
+.zigzag{
+	background:url(../img/zigzag.png);
+	height: 16px;
+}
+.two-pic div{
+	text-align: center;
+	padding: 40px 0;
+}
+.two-pic p, .two-pic h4{
+	padding: 1%;
+}
+a{
+	color: #d30027;
+	font-size: 12pt;
+}
+a:hover{
+	color: #ed002c;
+}
+a:link, a:active, a:visited{
+	color:#d30027;
+}
+/*Lessons*/
+h5{
+	color: #d30027;
+	font-size: 29.07pt;
+	text-transform: uppercase;
+}
+h6{
+	font-size: 18pt;
+}
+.col-md-4 ul{
+	padding: 0;
+	margin-top: 14px;
+}
+.doc, .print, .slide{
+	list-style-type: none;
+	padding-left: 40px;
+	padding-bottom: 10px;
+}
+.doc{
+	background: url(../img/icon-doc-small.png) no-repeat left top;
+}
+.print{
+	background: url(../img/icon-print-small.png) no-repeat left top;
+}
+.slide{
+	background: url(../img/icon-slide-small.png) no-repeat left top;
+}
+
+.lessons-hr{
+	border: none; /* Убираем границу для браузера Firefox */
+	color: #cedce5; /* Цвет линии для остальных браузеров */
+	background-color: #cedce5; /* Цвет линии для браузера Firefox и Opera */
+	height: 1px;
+}
+
+/*Carving*/
+.carving{
+	min-height: 600px;
+}
+.carving .col-md-6{
+	margin: auto 0;
+}
+.carving h2{
+	font-size: 6.2em;
+}
+.carving p{
+	padding:20px 40px 40px 10px;
+}
+.carving .button{
+	margin-left: 10px;
+}
+
+/*footer*/
+footer{
+	background-color: #bec3c7;
+	margin-top: 5%;
+	text-align: center;
+	padding: 3% 0 2% 0; 
+}
+footer p{
+	text-align: center;
+	margin-bottom: 2%;
+}
+/*social icons buttons*/
+footer .social-icons,footer .social-icons a{
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	margin-right: 1%;
+}
+
+
+footer .vk{
+	background: url(../img/icons-soc.png)  -0 -90px no-repeat;
+}
+footer .fb{
+	background: url(../img/icons-soc.png)  -61px -90px no-repeat;
+}
+footer .ok{
+	background: url(../img/icons-soc.png)  -122px -90px no-repeat;
+}
+footer .inst{
+	background: url(../img/icons-soc.png)  -184px -90px no-repeat;
+}
+footer .tw{
+	background: url(../img/icons-soc.png)  -245px -90px no-repeat;
+}
+
+footer .vk:hover{
+	background: url(../img/icons-soc.png)  -0px -140px no-repeat;
+}
+footer .fb:hover{
+	background: url(../img/icons-soc.png)  -61px -140px no-repeat;
+}
+footer .ok:hover{
+	background: url(../img/icons-soc.png)  -122px -140px no-repeat;
+}
+footer .inst:hover{
+	background: url(../img/icons-soc.png)  -184px -140px no-repeat;
+}
+footer .tw:hover{
+	background: url(../img/icons-soc.png)  -245px -140px no-repeat;
+}
+
+header .social-icons,header .social-icons a{
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	margin-right: 4%;
+	background-repeat: no-repeat;
+}
+header .social-icons{
+	margin-top: 25px;
+}
+header .col-md-offset-4{
+	text-align: center;
+}
+header .vk{
+	background: url(../img/icons-soc.png)  -79px 0;
+}
+header .fb{
+	background: url(../img/icons-soc.png) -124px 0;
+}
+header .ok{
+	background: url(../img/icons-soc.png) -168px 0;
+}
+header .inst{
+	background: url(../img/icons-soc.png) -213px 0;
+}
+header .tw{
+	background: url(../img/icons-soc.png) -257px 0;
+}
+
+header .vk:hover{
+	background: url(../img/icons-soc.png)  -79px -35px;
+}
+header .fb:hover{
+	background: url(../img/icons-soc.png) -124px -35px;
+}
+header .ok:hover{
+	background: url(../img/icons-soc.png) -168px -35px;
+}
+header .inst:hover{
+	background: url(../img/icons-soc.png) -213px -35px;
+}
+header .tw:hover{
+	background: url(../img/icons-soc.png) -257px -35px;
+}
+
+
+/*Dropdown menu alternative*/
+.dropdown{
+	margin: 2em 0;
+	padding: 0; 
+	width: 300px;
+}
+
+.dropdown-toggle{
+	width: 100%;
+	font-size: 2em;
+	font-family: 'Proxima Nova', Arial, Ubuntu, sans-serif;
+	color: #d30027;
+	border: 2px solid #d30027;
+	border-radius: 0;
+	padding: 5px;
+	background-color: transparent;
+	
+}
+.dropdown-toggle:hover, .dropdown-menu>li a:hover{
+	background-color: #ed002c;
+	color: white;	
+}
+/*Затемнение кнопки, когда открыто меню*/
+.open>.dropdown-toggle{
+	background-color: #a0001e;
+	color: #f2f2f2;
+	border: 2px solid #a0001e;
+	
+}
+.dropdown-menu{
+	width: 100%;
+	text-align: left;
+	font-size: 1em;
+	color: #d30027;
+	border: 2px solid #d30027;
+	border-radius: 0;
+}
+.dropdown-menu li a{
+	color: #d30027;
+	font-family: 'Open Sans Semibold', Arial, Ubuntu, sans-serif;
+	text-transform: uppercase;
+}
+.glyphicon-hand-down{
+	padding-left: 10px;
+	font-size: 0.8em;
+}
+
+
+/*Relative school*/
+@media (min-width: 992px){
+	.relative-margin{
+		margin-top: -25px;
+	}
+	.arrow-divider{
+		margin-top: -85px;
+	}
+	.sm{
+		margin-top:-65px;
+	}
+}

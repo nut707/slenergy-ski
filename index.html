@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html id='top'>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script language="JavaScript">
+			function openDir(form) {
+			window.location=(form.dir.options[form.dir.selectedIndex].value);
+			}
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				$('a[href^="#"]').click(function(){
+					var target = $(this).attr('href');
+					$('html, body').animate({scrollTop: $(target).offset().top}, 800);
+					return false;
+				});
+			})
+		</script>
+		<title>Slenergy</title>
+	</head>
+	
+	<body>
+		<a class='up'href="#top"><span class='glyphicon glyphicon-chevron-up'></span></a>
+		<header >
+			<div class='container'>
+				<div class="row">
+					<div class='col-md-4 col-sm-6  logo'>
+						<a href="http://slenergy.ru/" >
+							<img src="./img/logo.png"/>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 hidden-xs col-md-offset-4">
+						<!--Social buttons-->
+						<div class="social-icons vk">
+							<a href="#"></a>
+						</div>
+						<div class="social-icons fb">
+							<a href="#"></a>
+						</div>
+						<div class="social-icons ok">
+							<a href="#"></a>
+						</div>
+						<div class="social-icons inst">
+							<a href="#"></a>
+						</div>
+						<div class="social-icons tw">
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--Top and features-->
+		<div class='container'>
+			<div class="row">
+				<div class='col-md-6'>
+					<h1>ВЫБИРАЕМ СНОУБОРД</h1><br>
+					<h1>И УЧИМСЯ КАТАТЬСЯ</h1>
+					<h2>С ИНСТРУКТОРОМ <br>МЕЖДУНАРОДНОЙ КАТЕГОРИИ</h2>
+					<ul class='top-features'>
+						<li>Наглядные и пошаговые онлайн-уроки на простом языке.</li>
+						<li>Обучение с инструткором международной категории.</li>
+						<li>Более 1&nbsp;000&nbsp;000 просмотров видео.</li>
+					</ul>
+					<!--Выбрать урок альтернатива-->
+					<div class="dropdown">
+						<button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							ВЫБРАТЬ ТЕМУ УРОКА 
+							<span class='glyphicon glyphicon-hand-down' aria-hidden="true"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#equipment">Подбор снаряжения</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#basics">Основы сноубординга</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#freestyle">Фристайл</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#jibbing">Cноупласт и джиббинг</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#pro-turns">Прогрессивные повороты</a></li>
+						</ul>
+					</div>
+					<!--Выбрать урок
+					<form name="myform">
+						<select class='form-control'name="dir" size="1">
+							<option value="">Выбрать тему урока</option>
+							<option value='#equipment'> Подбор снаряжения
+							<option value='#basics'> Основы сноубординга
+							<option value='#freestyle'> Фристайл
+							<option value='#jibbing'> Cноупласт и джиббинг
+							<option value='#pro-turns'> Прогрессивные повороты
+						</select>
+						<input class='button' type="button" name="button" value="ПЕРЕЙТИ" onclick="openDir(this.form);"> 
+					</form>-->
+				</div>
+			</div>
+		</div>
+		<div class='arrow-divider' style='margin-top:0px;'></div>
+		<!--Школа, блок преимуществ-->
+		<div class='container'>
+			<div class="row ">
+				<h3>Онлайн-школа поможет<br> быстро освоить сноубординг и научиться кататься!</h3>
+				<hr class="black-hr">
+				<div class='row block-center'>
+					<div class='col-md-5 col-xs-12' >
+						<h4>Ты будешь заниматься с инструктором <br>международной категории <br>Ильей Косяченко</h4>
+						<P>Сноубордингом я занимаюсь 7 лет. За это время прошел обучение в горнолыжной школе «Комета», где получил категорию Freestyle, а на повышение квалификации до уровня В я уезжал в Австрию, там же окончил «Альпин-курс».</P>
+					</div>
+					<div class='col-md-7 hidden-sm hidden-xs'>
+						<img src="./img/blue-rider.png" align='right'>
+					</div>
+					
+				</div>
+				<div class='arrow-divider'></div>
+				<div class='row block-center relative-margin'>
+					<div class='col-md-7 hidden-sm hidden-xs'>
+						<img src="./img/glasses.png" align='left'>
+					</div>
+					<div class='col-md-5'>
+						<h4>Подберешь <br>нужное тебе снаряжение</h4>
+						<P>Советы начинающим, как купить подходящий сноуборд, ботинки и крепления. Как одеться на склон, чтобы кататься в удовольствие, а не мерзнуть на морозе, а также какая вам потребуется защита.</P>
+					</div>
+				</div>
+				<div class='arrow-divider sm'></div>
+				<div class='row block-center relative-margin'>
+					<div class='col-md-5 col-xs-12'>
+						<h4>Будешь чувствовать <br>себя уверенно на склоне</h4>
+						<P>Ответим на самые актуальные вопросы начинающего: как тормозить и останавливаться на склоне, как правильно падать и как безопасно пользоваться подъемником. А также покажем первые упражнения на склоне.</P>
+					</div>
+					<div class='col-md-7 hidden-sm hidden-xs'>
+						<img src="./img/girl-rider.png" align='right'>
+					</div>
+				</div>
+				<div class='arrow-divider'></div>
+				<div class='row block-center relative-margin'>
+					<div class='col-md-7 hidden-sm hidden-xs'>
+						<img src="./img/bigair-rider.png" align='left'>
+					</div>
+					<div class='col-md-5 col-xs-12'>
+						<h4>Выберешь свой стиль!</h4>
+						<P>Когда азы сноубординга полностью освоены, хочется новых ощущений. Здесь станет понятно, в каких направлениях можно прогрессировать дальше. </P>
+					</div>
+				</div>
+				<div class='arrow-divider'></div>
+				<div class='row block-center relative-margin'>
+					<div class='col-md-5 col-xs-12'>
+						<h4>А потом не придется переучиваться!</h4>
+						<P>Некоторые люди начинают кататься на сноуборде сами или с друзьями, не прибегая к помощи инструктора. Из-за чего заучивают не правильные движения, которые приходится переучивать в будущем. Кроме того подобное катание может привести к рисковым ситуациям на склоне.</P>
+					</div>
+					<div class='col-md-7 hidden-sm hidden-xs'>
+						<img src="./img/silver-rider.png" align='right'>
+					</div>					
+				</div>
+			</div>
+		</div>
+		<!--2 pic-->
+		<div class="container zigzag"></div>
+		<div class="container">
+			<div class="row two-pic">
+				<div class="col-md-6">
+					<img src="./img/icon_question.png">
+					<h4>Инструктор ответит <br>на твои вопросы</h4>
+					<p>У нас работает ветка форума, которую ведет инструктор по сноубордингу. Ему можно не только задать вопрос, но и заснять на видео элемент, который не получается, и узнать, что именно ты делаешь не верно.</p>
+					<a href="#">Задать вопрос</a>
+				</div>
+				<div class="col-md-6">
+					<img src="./img/icon_map.png">
+					<h4>Узнаешь, как добраться до горнолыжек Приморья и где остановиться</h4>
+					<p>На странице горнолыжных склонов Приморского края можно познакомиться работой и характеристиками трасс, понять, что можно взять в прокате и по каким ценам, а также  где найти жилье недалеко от выбранных трасс.</p>
+					<a href="#">Узнать больше</a>
+				</div>
+			</div>
+		</div>
+		<div class="container zigzag"></div>
+		<!--Lessons-->
+		<div class="container">
+			<h3 style='margin-top:90px;'>Уроки сноубординга</h3>
+			<hr class="black-hr" style="margin-top: 35px; margin-bottom: 70px;">
+			<!--Тема урока подбор снаряжения equipment-->
+			<div id='equipment'class="row">
+				<div class="col-md-3">
+					<h5>Подбор снаряжения</h5>
+				</div>
+				<div class="col-md-9">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Как купить сноуборд?</h6>
+							<p>В этой рубрике инструктор международной категории по сноубордингу Илья Косяченко советует, какой сноуборд подойдет начинающему и как подобрать его под себя.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Выбор досок</a></li>
+							<li class="print"><a href="#">Памятка в магазин</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Как выбрать ботинки и крепления?</h6>
+							<p>В этой рубрике инструктор рассказывает, как выбирать ботинки, как подобрать к ним крепления и их отрегулировать.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Выбор креплений и ботинок</a></li>
+							<li class="doc"><a href="#">Регулировка и сборка</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Как одеваться на склон?</h6>
+							<p>В чем учиться кататься на сноуборде, как одеваться на склон и какая защита необходима начинающему.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Что одевать на склон</a></li>
+							<li class="doc"><a href="#">Выбор защиты</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Где купить сноуборд и снаряжение к нему?</h6>
+							<p>В этой рубрике представлен достаточно полный перечень магазинов Владивостока, в которые можно обратиться, чтобы приобрести сноуборд, крепления, ботинки и другое снаряжение, а также сноубордистскую одежду.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>						
+							<li class="doc"><a href="#">Магазины Владивостока</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<hr class="lessons-hr">
+			<!--Тема урока Основы сноубординга basics-->
+			<div id='basics'class="row">
+				<div class="col-md-3">
+					<h5>Основы сноубординга</h5>
+				</div>
+				<div class="col-md-9">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Первые шаги на сноуборде.</h6>
+							<p>Как двигаться, останавливаться и управлять сноубордом? Как правильно падать? Зачем уметь ездить с одной пристегнутой ногой и что делать на сноуборде с двумя ногами в креплениях? Основные упражнения покажет инструктор Илья Косяченко.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Советы</a></li>
+							<li class="doc"><a href="#">Как правильно падать</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Поведение сноубордиста на склоне – правила FIS.</h6>
+							<p>Сноуборд, как и любой другой вид спорта, связан с риском. Правила FIS применяются ко всем лыжникам и сноубордистам, их предназначение – предотвращение несчастных случаев на склоне. Каждый спортсмен обязан хорошо знать и соблюдать эти правила, ведь хорошие манеры на склоне и безопасность всегда приветствуются!</p>
+						</div>
+						<div class="col-md-4">
+							<ul>							
+							<li class="doc"><a href="#">Правила</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Учимся кататься на склоне и пользоваться подъемником.</h6>
+							<p>Как пользоваться подъемником, как управлять сноубордом, как двигаться по склону, как менять направление движения и регулировать скорость.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Использование подъемника</a></li>
+							<li class="doc"><a href="#">Катание на склоне</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Повороты на склоне с перекантовкой.</h6>
+							<p>Как скатываться вниз по склону, перенося вес тела и делая повороты с перекантовкой в направленной стойке.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Осваиваем поворот</a></li>
+							<li class="doc"><a href="#">Поворот с перекантовкой</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="lessons-hr">
+			<!--Тема урока Фристайл freestyle-->
+			<div class="row" id='freestyle'>
+				<div class="col-md-3">
+					<h5>Фристайл</h5>
+					<p>Прыжки с трамплина, вращения на склоне и другие элементы.</p>
+				</div>
+				<div class="col-md-9">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Базовые элементы фристайла на плоскости.</h6>
+							<p>В этой рубрике инструктор Илья Косяченко вместе с учеником Андреем Цуренко расскажет что такое фристайл и покажет основные элементы, такие как трюки олли и нолли, которые помогут вам освоить сноуборд.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Что такое фристайл?</a></li>
+							<li class="doc"><a href="#">Выполняем основные элементы</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Трюки на вращения на склоне.</h6>
+							<p>На этом уроке вместе с инструктором Ильей Косяченко учимся выполнять трюки на плоскости – вращения 180 и 360 градусов, а также nose и tail roll.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Трюки на вращение</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Трюки на трамплинах.</h6>
+							<p>Как правильно подъезжать к трамплинам и как с них выпрыгивать, как должен быть распределен вес и как приземляться после прыжка. А также научитесь делать прямой прыжок с трамплина и брать грэбы.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Основные правила прыжков</a></li>
+							<li class="doc"><a href="#">Что такое грэбы?</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Трюки на сноуборде: 180, 360, 540 на трамплине.</h6>
+							<p>На четвертом уроке по фристайлу инструктор Илья Косяченко как делать трюки на вращения на 180, 360 540 градусов с трамплина.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Советы</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="lessons-hr">
+			<!--Тема урока Cноупласт и джиббинг jibbing-->
+			<div class="row" id='jibbing'>
+				<div class="col-md-3">
+					<h5>Cноупласт и джиббинг</h5>
+					<p>Трюки на различных фигурах.</p>
+				</div>
+				<div class="col-md-9">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Знакомство с катанием по сноупласту. <br>Основы джиббинга.</h6>
+							<p>Сноупласт вместо снега и как по нему кататься? Что такое джиббинг и основные его элементы, такие как трюки 50/50 и boardslide.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Что такое джиббинг?</a></li>
+							<li class="doc"><a href="#">Выполняем основные элементы</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Фристайл. Батут. Квотер. Трамплин.</h6>
+							<p>В этой рубрике рассказываем о выполнении серии трюков на небольшом трамплине и в квотере.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Трюки с трамплина</a></li>
+							<li class="doc"><a href="#">Трюки на квотер-пайпе</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Биг Эйр. Сложные трюки в воздушную подушку.</h6>
+							<p>Мастер-класс от сноубордистов Владивостока по прыжкам в воздушную подушку</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Прыжки в подушку</a></li>
+							<li class="doc"><a href="#">Сложные трюки</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="lessons-hr">
+			<!--Тема урока Прогрессивные повороты pro-turns-->
+			<div class="row" id='pro-turns'>
+				<div class="col-md-3">
+					<h5>Прогрессивные повороты</h5>
+				</div>
+				<div class="col-md-9">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Активные повороты с перекантовкой &mdash; вертикальная работа.</h6>
+							<p>Как подготовиться к выполнению поворотов с разгрузками и как правильно их выполнять.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Поворот с разгрузкой</a></li>
+							<li class="doc"><a href="#">Поворот с разгрузкой вверх</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Короткие повороты.</h6>
+							<p>Мы подошли вплотную к карвингу. На этом уроке мы разберем карвинговые повороты с заклоном.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Упражнения для тренировки</a></li>
+							<li class="doc"><a href="#">Выполняем короткий поворот</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="lessons-hr">
+					<!--Подтемы урока -->
+					<div class="row">
+						<div class="col-md-8">
+							<h6>Карвинговые повороты с заклоном.</h6>
+							<p>Мы подошли вплотную к карвингу. На этом уроке мы разберем карвинговые повороты с заклоном.</p>
+						</div>
+						<div class="col-md-4">
+							<ul>
+							<li class="slide"><a href="#">Видеоурок</a></li>
+							<li class="doc"><a href="#">Тренируемся делать заклон</a></li>
+							<li class="doc"><a href="#">Полноценный поворот с заклоном</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+			</div>
+
+		</div>
+
+		<!--carving-->
+		<div class="container">
+			<div class="row carving block-center">
+				<div class='col-md-6' style='z-index:1;'>
+					<h1>НОВОЕ В СЕЗОНЕ 2014-2015</h1>
+					<h2>КАРВИНГ</h2>
+					<p>Следите за страницей с новыми уроками  школы сноубординга, которая будет обновляться в течение сезона.</p>
+					<button class="button">ПЕРЕЙТИ</button>
+				</div>
+				<div class='col-md-6 hidden-xs hidden-sm'>
+					<img src="./img/carving-rider.png" align='right'>
+				</div>
+
+			</div>
+		</div>
+
+		<!--2 pic-->
+		<div class="container zigzag"></div>
+		<div class="container">
+			<div class="row two-pic">
+				<div class="col-md-6">
+					<img src="./img/icon_question.png">
+					<h4>Задай вопрос инструктору</h4>
+					<p style="
+    margin-bottom: 39px;">На вопросы отвечает инструктор международной категории Илья Косяченко. Можно найти ответ среди готовых вопросов, задать собственный или даже прислать видео со своим катанием. </p>
+					<a href="#">Задать вопрос</a>
+				</div>
+				<div class="col-md-6">
+					<img src="./img/icon_map.png">
+					<h4>Горнолыжные склоны Приморья</h4>
+					<p>На странице горнолыжных склонов можно познакомиться с работой и характеристиками трасс, понять, что можно взять в прокате и по каким ценам, а также где найти жилье недалеко от выбранных трасс.</p>
+					<a href="#">Посмотреть склоны</a>
+				</div>
+			</div>
+		</div>
+		<div class="container zigzag"></div>
+
+		<footer>
+			<p>Новости, обновления и актуальная информация в наших сетях</p>
+			<div class="social-icons vk">
+				<a href="#"></a>
+			</div>
+			<div class="social-icons fb">
+				<a href="#"></a>
+			</div>
+			<div class="social-icons ok">
+				<a href="#"></a>
+			</div>
+			<div class="social-icons inst">
+				<a href="#"></a>
+			</div>
+			<div class="social-icons tw">
+				<a href="#"></a>
+			</div>
+		</footer>
+	</body>
+</html>
