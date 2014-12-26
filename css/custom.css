@@ -24,7 +24,6 @@ h4,h6{
 }
 body
 {
-	/*zoom:85%;*/
 	background: url(../img/background.png) no-repeat center top;
 	-webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -364,7 +363,7 @@ header .tw{
 .dropdown{
 	margin: 2em 0;
 	padding: 0; 
-	width: 300px;
+	width: 350px;
 }
 
 .dropdown-toggle{
@@ -372,7 +371,7 @@ header .tw{
 	font-size: 2em;
 	font-family: 'Proxima Nova', Arial, Ubuntu, sans-serif;
 	color: #d30027;
-	border: 2px solid #d30027;
+	border: 3px solid #d30027;
 	border-radius: 0;
 	padding: 5px;
 	background-color: transparent;
