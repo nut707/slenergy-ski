@@ -24,7 +24,8 @@ h4,h6{
 }
 body
 {
-	background: url(../img/background.jpg) no-repeat center top;
+	/*zoom:85%;*/
+	background: url(../img/background.png) no-repeat center top;
 	-webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -126,9 +127,7 @@ option{
 	background-color: #fff;
 	border: 2px solid #b30021;
 }
-form{
-	margin-bottom: 70px;
-}
+
 
 /*Разделитель стрелка вниз*/
 .arrow-divider{
@@ -174,39 +173,36 @@ h3{
 }
 h4{
 	color: #0077cc;
-	font-size: 18pt;
-}
-
-.block-center h4{
+	font-size: 170%;
 	margin-bottom: 4%;
 }
 
 p{
-	font-size: 16pt;
+	font-size: 120%;
 	text-align: left;
 }
 
-h4, h4+p{
-	padding-left: 2%;
-}
+
 
 
 
 /*2 pic*/
 .zigzag{
-	background:url(../img/zigzag.png);
+	background:url(../img/wave.png) center repeat-x;
 	height: 16px;
 }
 .two-pic div{
 	text-align: center;
 	padding: 40px 0;
 }
-.two-pic p, .two-pic h4{
-	padding: 1%;
+.two-pic p{
+	margin-bottom: 25px;
+	padding: 0 25px;
+	text-align: justify;
 }
 a{
 	color: #d30027;
-	font-size: 12pt;
+	font-size: 100%;
 }
 a:hover{
 	color: #ed002c;
@@ -217,11 +213,11 @@ a:link, a:active, a:visited{
 /*Lessons*/
 h5{
 	color: #d30027;
-	font-size: 29.07pt;
+	font-size: 270%;
 	text-transform: uppercase;
 }
 h6{
-	font-size: 18pt;
+	font-size: 160%;
 }
 .col-md-4 ul{
 	padding: 0;
@@ -230,16 +226,17 @@ h6{
 .doc, .print, .slide{
 	list-style-type: none;
 	padding-left: 40px;
-	padding-bottom: 10px;
+	margin-bottom: 10px;
+	min-height: 22px;
 }
 .doc{
-	background: url(../img/icon-doc-small.png) no-repeat left top;
+	background: url(../img/icon-doc-small.png) no-repeat left center;
 }
 .print{
-	background: url(../img/icon-print-small.png) no-repeat left top;
+	background: url(../img/icon-print-small.png) no-repeat left center;
 }
 .slide{
-	background: url(../img/icon-slide-small.png) no-repeat left top;
+	background: url(../img/icon-slide-small.png) no-repeat left center;
 }
 
 .lessons-hr{
@@ -256,11 +253,9 @@ h6{
 .carving .col-md-6{
 	margin: auto 0;
 }
-.carving h2{
-	font-size: 6.2em;
-}
+
 .carving p{
-	padding:20px 40px 40px 10px;
+	padding:40px 200px 40px 10px;
 }
 .carving .button{
 	margin-left: 10px;
@@ -299,7 +294,7 @@ footer .inst{
 	background: url(../img/icons-soc.png)  -184px -90px no-repeat;
 }
 footer .tw{
-	background: url(../img/icons-soc.png)  -245px -90px no-repeat;
+	background: url(../img/you.png) 0 -80px no-repeat;
 }
 
 footer .vk:hover{
@@ -315,13 +310,13 @@ footer .inst:hover{
 	background: url(../img/icons-soc.png)  -184px -140px no-repeat;
 }
 footer .tw:hover{
-	background: url(../img/icons-soc.png)  -245px -140px no-repeat;
+	background: url(../img/you.png)  0px -130px no-repeat;
 }
 
 header .social-icons,header .social-icons a{
 	display: inline-block;
-	height: 32px;
-	width: 32px;
+	height: 33px;
+	width: 33px;
 	margin-right: 4%;
 	background-repeat: no-repeat;
 }
@@ -331,6 +326,7 @@ header .social-icons{
 header .col-md-offset-4{
 	text-align: center;
 }
+/*
 header .vk{
 	background: url(../img/icons-soc.png)  -79px 0;
 }
@@ -344,23 +340,23 @@ header .inst{
 	background: url(../img/icons-soc.png) -213px 0;
 }
 header .tw{
-	background: url(../img/icons-soc.png) -257px 0;
+	background: url(../img/you.png) 0 0;
 }
-
-header .vk:hover{
+*/
+header .vk{
 	background: url(../img/icons-soc.png)  -79px -35px;
 }
-header .fb:hover{
-	background: url(../img/icons-soc.png) -124px -35px;
+header .fb{
+	background: url(../img/icons-soc.png) -123px -35px;
 }
-header .ok:hover{
+header .ok{
 	background: url(../img/icons-soc.png) -168px -35px;
 }
-header .inst:hover{
+header .inst{
 	background: url(../img/icons-soc.png) -213px -35px;
 }
-header .tw:hover{
-	background: url(../img/icons-soc.png) -257px -35px;
+header .tw{
+	background: url(../img/you.png) 0px -40px;
 }
 
 
@@ -405,6 +401,7 @@ header .tw:hover{
 	color: #d30027;
 	font-family: 'Open Sans Semibold', Arial, Ubuntu, sans-serif;
 	text-transform: uppercase;
+	font-size: 130%;
 }
 .glyphicon-hand-down{
 	padding-left: 10px;
@@ -422,5 +419,10 @@ header .tw:hover{
 	}
 	.sm{
 		margin-top:-65px;
+	}
+}
+@media(max-width: 767px){
+		h4, h4+p{
+		padding-left: 15px;
 	}
 }

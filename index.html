@@ -22,35 +22,46 @@
 				});
 			})
 		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 0) 
+						{$('#scroller').fadeIn();} 
+					else 
+						{$('#scroller').fadeOut();}
+				});
+			$('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 800); return false;});
+		});
+		</script>
 		<title>Slenergy</title>
 	</head>
 	
 	<body>
-		<a class='up'href="#top"><span class='glyphicon glyphicon-chevron-up'></span></a>
+		<a id='scroller' class='up'href="#top"><span class='glyphicon glyphicon-chevron-up'></span></a>
 		<header >
 			<div class='container'>
 				<div class="row">
-					<div class='col-md-4 col-sm-6  logo'>
-						<a href="http://slenergy.ru/" >
+					<div class='col-md-4 col-sm-6 logo'>
+						<a target="_blank" href="http://slenergy.ru/" >
 							<img src="./img/logo.png"/>
 						</a>
 					</div>
-					<div class="col-md-4 col-sm-6 hidden-xs col-md-offset-4">
+					<div class="col-md-4 col-sm-6 col-md-offset-4">
 						<!--Social buttons-->
 						<div class="social-icons vk">
-							<a href="#"></a>
+							<a target="_blank" href="https://vk.com/slenergy"></a>
 						</div>
 						<div class="social-icons fb">
-							<a href="#"></a>
+							<a target="_blank" href="https://www.facebook.com/slenergy.extreme"></a>
 						</div>
 						<div class="social-icons ok">
-							<a href="#"></a>
+							<a target="_blank" href="http://www.odnoklassniki.ru/slenergy.ru?st._aid=ExternalGroupWidget_OpenGroup"></a>
 						</div>
 						<div class="social-icons inst">
-							<a href="#"></a>
+							<a target="_blank" href="http://instagram.com/slenergy"></a>
 						</div>
 						<div class="social-icons tw">
-							<a href="#"></a>
+							<a target="_blank" href="https://www.youtube.com/user/slenergyextreme"></a>
 						</div>
 					</div>
 				</div>
@@ -60,26 +71,24 @@
 		<div class='container'>
 			<div class="row">
 				<div class='col-md-6'>
-					<h1>ВЫБИРАЕМ СНОУБОРД</h1><br>
+					<h1>ВЫБИРАЕМ ГОРНЫЕ ЛЫЖИ</h1>
 					<h1>И УЧИМСЯ КАТАТЬСЯ</h1>
 					<h2>С ИНСТРУКТОРОМ <br>МЕЖДУНАРОДНОЙ КАТЕГОРИИ</h2>
 					<ul class='top-features'>
-						<li>Наглядные и пошаговые онлайн-уроки на простом языке.</li>
-						<li>Обучение с инструткором международной категории.</li>
-						<li>Более 1&nbsp;000&nbsp;000 просмотров видео.</li>
+						<li>Наглядные и последовательные онлайн-уроки, рассказанные простым языком.</li>
+
+						<li>Обучение с инструктором международной категории.</li>
 					</ul>
 					<!--Выбрать урок альтернатива-->
 					<div class="dropdown">
 						<button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-							ВЫБРАТЬ ТЕМУ УРОКА 
+							ВЫБРАТЬ ТЕМУ УРОКА
 							<span class='glyphicon glyphicon-hand-down' aria-hidden="true"></span>
 						</button>
 						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="#equipment">Подбор снаряжения</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#basics">Основы сноубординга</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#freestyle">Фристайл</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#jibbing">Cноупласт и джиббинг</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="-1" href="#pro-turns">Прогрессивные повороты</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#basics">Основы катания <br>на горных лыжах</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#parallel">Учимся кататьcя <br> на параллельных лыжах</a></li>
 						</ul>
 					</div>
 					<!--Выбрать урок
@@ -97,30 +106,30 @@
 				</div>
 			</div>
 		</div>
-		<div class='arrow-divider' style='margin-top:0px;'></div>
+		<div class='arrow-divider' style='margin-top:85px;'></div>
 		<!--Школа, блок преимуществ-->
 		<div class='container'>
 			<div class="row ">
-				<h3>Онлайн-школа поможет<br> быстро освоить сноубординг и научиться кататься!</h3>
+				<h3>Онлайн-школа поможет<br> быстро освоить горные лыжи и научиться кататься!</h3>
 				<hr class="black-hr">
 				<div class='row block-center'>
 					<div class='col-md-5 col-xs-12' >
-						<h4>Ты будешь заниматься с инструктором <br>международной категории <br>Ильей Косяченко</h4>
-						<P>Сноубордингом я занимаюсь 7 лет. За это время прошел обучение в горнолыжной школе «Комета», где получил категорию Freestyle, а на повышение квалификации до уровня В я уезжал в Австрию, там же окончил «Альпин-курс».</P>
+						<h4>Ты будешь заниматься с инструктором международной категории Евгением Моисеенко</h4>
+						<P>Евгений занимается горнолыжным спортом уже 32 года! Является инструктором по горным лыжам категории В (тренирует учеников) и инструктором преподавателей категории С (обучает инструкторов) уже больше 4 лет. Входит в состав Национальной лиги инструкторов по горнолыжному спорту и сноуборду.</P>
 					</div>
 					<div class='col-md-7 hidden-sm hidden-xs'>
-						<img src="./img/blue-rider.png" align='right'>
+						<img src="./img/instructor.png" align='right'>
 					</div>
 					
 				</div>
 				<div class='arrow-divider'></div>
 				<div class='row block-center relative-margin'>
 					<div class='col-md-7 hidden-sm hidden-xs'>
-						<img src="./img/glasses.png" align='left'>
+						<img src="./img/ski.png" align='left'>
 					</div>
 					<div class='col-md-5'>
 						<h4>Подберешь <br>нужное тебе снаряжение</h4>
-						<P>Советы начинающим, как купить подходящий сноуборд, ботинки и крепления. Как одеться на склон, чтобы кататься в удовольствие, а не мерзнуть на морозе, а также какая вам потребуется защита.</P>
+						<P>Советы начинающим, как купить подходящие лыжи, ботинки и необходимое снаряжение. Как одеться на склон, чтобы кататься в удовольствие, а не мерзнуть на морозе, а также какая потребуется защита.</P>
 					</div>
 				</div>
 				<div class='arrow-divider sm'></div>
@@ -130,28 +139,18 @@
 						<P>Ответим на самые актуальные вопросы начинающего: как тормозить и останавливаться на склоне, как правильно падать и как безопасно пользоваться подъемником. А также покажем первые упражнения на склоне.</P>
 					</div>
 					<div class='col-md-7 hidden-sm hidden-xs'>
-						<img src="./img/girl-rider.png" align='right'>
+						<img src="./img/black.png" align='right'>
 					</div>
 				</div>
 				<div class='arrow-divider'></div>
 				<div class='row block-center relative-margin'>
 					<div class='col-md-7 hidden-sm hidden-xs'>
-						<img src="./img/bigair-rider.png" align='left'>
+						<img src="./img/red.png" align='left'>
 					</div>
-					<div class='col-md-5 col-xs-12'>
-						<h4>Выберешь свой стиль!</h4>
-						<P>Когда азы сноубординга полностью освоены, хочется новых ощущений. Здесь станет понятно, в каких направлениях можно прогрессировать дальше. </P>
-					</div>
-				</div>
-				<div class='arrow-divider'></div>
-				<div class='row block-center relative-margin'>
 					<div class='col-md-5 col-xs-12'>
 						<h4>А потом не придется переучиваться!</h4>
-						<P>Некоторые люди начинают кататься на сноуборде сами или с друзьями, не прибегая к помощи инструктора. Из-за чего заучивают не правильные движения, которые приходится переучивать в будущем. Кроме того подобное катание может привести к рисковым ситуациям на склоне.</P>
+						<P>Некоторые люди начинают кататься на лыжах сами или с друзьями, не прибегая к помощи инструктора, из-за чего заучивают неправильные техники, которые приходится переучивать в будущем. Кроме того, подобное катание может привести к рисковым ситуациям на склоне.</P>
 					</div>
-					<div class='col-md-7 hidden-sm hidden-xs'>
-						<img src="./img/silver-rider.png" align='right'>
-					</div>					
 				</div>
 			</div>
 		</div>
@@ -162,21 +161,21 @@
 				<div class="col-md-6">
 					<img src="./img/icon_question.png">
 					<h4>Инструктор ответит <br>на твои вопросы</h4>
-					<p>У нас работает ветка форума, которую ведет инструктор по сноубордингу. Ему можно не только задать вопрос, но и заснять на видео элемент, который не получается, и узнать, что именно ты делаешь не верно.</p>
-					<a href="#">Задать вопрос</a>
+					<p>У нас работает ветка форума, которую ведет инструктор по горным лыжам. Ему можно не только задать вопрос, но и заснять на видео элемент, который не получается, и узнать, что именно ты делаешь неверно. </p>
+					<a target="_blank" href="http://slenergy.ru/forum/viewtopic.php?f=55&t=242">Задать вопрос</a>
 				</div>
 				<div class="col-md-6">
 					<img src="./img/icon_map.png">
 					<h4>Узнаешь, как добраться до горнолыжек Приморья и где остановиться</h4>
-					<p>На странице горнолыжных склонов Приморского края можно познакомиться работой и характеристиками трасс, понять, что можно взять в прокате и по каким ценам, а также  где найти жилье недалеко от выбранных трасс.</p>
-					<a href="#">Узнать больше</a>
+					<p>На странице горнолыжных склонов Приморского края можно познакомиться работой и характеристиками трасс, понять, что можно взять напрокат и по каким ценам, а также  где найти жилье недалеко от выбранных трасс.</p>
+					<a target="_blank" href="http://slenergy.ru/gornolyzhnye-sklony-gde-katatsya-gde-o/">Узнать больше</a>
 				</div>
 			</div>
 		</div>
 		<div class="container zigzag"></div>
 		<!--Lessons-->
 		<div class="container">
-			<h3 style='margin-top:90px;'>Уроки сноубординга</h3>
+			<h3 style='margin-top:90px;'>Выбрать урок по горным лыжам</h3>
 			<hr class="black-hr" style="margin-top: 35px; margin-bottom: 70px;">
 			<!--Тема урока подбор снаряжения equipment-->
 			<div id='equipment'class="row">
@@ -187,14 +186,14 @@
 					<!--Подтемы урока -->
 					<div class="row">
 						<div class="col-md-8">
-							<h6>Как купить сноуборд?</h6>
-							<p>В этой рубрике инструктор международной категории по сноубордингу Илья Косяченко советует, какой сноуборд подойдет начинающему и как подобрать его под себя.</p>
+							<h6>Как купить лыжи?</h6>
+							<p>В этой рубрике инструктор по горным лыжам Евгений Моисеенко советует, какие лыжи необходимы начинающему и как их выбрать.</p>
 						</div>
 						<div class="col-md-4">
 							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Выбор досок</a></li>
-							<li class="print"><a href="#">Памятка в магазин</a></li>
+							<li class="slide"><a target="_blank" href="http://slenergy.ru/kak-kupit-gornye-lyzhi.html/">Видеоурок</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/kak-kupit-gornye-lyzhi.html/">Выбор горных лыж</a></li>
+							<li class="print"><a target="_blank" href="http://slenergy.ru/wp-content/uploads/2013/10/pamyatka.jpg">Памятка в магазин</a></li>
 							</ul>
 						</div>
 					</div>
@@ -202,14 +201,14 @@
 					<!--Подтемы урока -->
 					<div class="row">
 						<div class="col-md-8">
-							<h6>Как выбрать ботинки и крепления?</h6>
-							<p>В этой рубрике инструктор рассказывает, как выбирать ботинки, как подобрать к ним крепления и их отрегулировать.</p>
+							<h6>Как купить горнолыжные ботинки?</h6>
+							<p>В этой рубрике инструктор рассказывает, как выбрать ботинки и как подобрать к ним крепления.</p>
 						</div>
 						<div class="col-md-4">
 							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Выбор креплений и ботинок</a></li>
-							<li class="doc"><a href="#">Регулировка и сборка</a></li>
+							<li class="slide"><a target="_blank" href="http://slenergy.ru/kak-vybrat-gornolyzhnye-botinki.html">Видеоурок</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/kak-vybrat-gornolyzhnye-botinki.html">Выбор креплений и ботинок</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/kak-vybrat-gornolyzhnye-botinki.html#reg">Регулировка и сборка</a></li>
 							</ul>
 						</div>
 					</div>
@@ -218,26 +217,13 @@
 					<div class="row">
 						<div class="col-md-8">
 							<h6>Как одеваться на склон?</h6>
-							<p>В чем учиться кататься на сноуборде, как одеваться на склон и какая защита необходима начинающему.</p>
+							<p>В чем учиться кататься на лыже, как одеваться на склон и какая защита необходима начинающему.</p>
 						</div>
 						<div class="col-md-4">
 							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Что одевать на склон</a></li>
-							<li class="doc"><a href="#">Выбор защиты</a></li>
-							</ul>
-						</div>
-					</div>
-					<hr class="lessons-hr">
-					<!--Подтемы урока -->
-					<div class="row">
-						<div class="col-md-8">
-							<h6>Где купить сноуборд и снаряжение к нему?</h6>
-							<p>В этой рубрике представлен достаточно полный перечень магазинов Владивостока, в которые можно обратиться, чтобы приобрести сноуборд, крепления, ботинки и другое снаряжение, а также сноубордистскую одежду.</p>
-						</div>
-						<div class="col-md-4">
-							<ul>						
-							<li class="doc"><a href="#">Магазины Владивостока</a></li>
+							<li class="slide"><a target="_blank" href="http://slenergy.ru/chto-nadet-na-gornolyzhnyjj-sklon.html">Видеоурок</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/chto-nadet-na-gornolyzhnyjj-sklon.html">Что надевать на склон</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/chto-nadet-na-gornolyzhnyjj-sklon.html#poddd">Выбор защиты</a></li>
 							</ul>
 						</div>
 					</div>					
@@ -247,20 +233,20 @@
 			<!--Тема урока Основы сноубординга basics-->
 			<div id='basics'class="row">
 				<div class="col-md-3">
-					<h5>Основы сноубординга</h5>
+					<h5>Основы катания на горных лыжах</h5>
 				</div>
 				<div class="col-md-9">
 					<!--Подтемы урока -->
 					<div class="row">
 						<div class="col-md-8">
-							<h6>Первые шаги на сноуборде.</h6>
-							<p>Как двигаться, останавливаться и управлять сноубордом? Как правильно падать? Зачем уметь ездить с одной пристегнутой ногой и что делать на сноуборде с двумя ногами в креплениях? Основные упражнения покажет инструктор Илья Косяченко.</p>
+							<h6>Первые шаги на горнолыжном склоне.</h6>
+							<p>Как двигаться, останавливаться и управлять горными лыжами? Как правильно падать? Обо всем этом расскажет инструктор.</p>
 						</div>
 						<div class="col-md-4">
 							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Советы</a></li>
-							<li class="doc"><a href="#">Как правильно падать</a></li>
+							<li class="slide"><a target="_blank" href="http://slenergy.ru/pervye-shagi-na-gornolyzhnom-sklone.html">Видеоурок</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/pervye-shagi-na-gornolyzhnom-sklone.html#1">Советы</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/pervye-shagi-na-gornolyzhnom-sklone.html#s5">Как правильно падать</a></li>
 							</ul>
 						</div>
 					</div>
@@ -268,12 +254,12 @@
 					<!--Подтемы урока -->
 					<div class="row">
 						<div class="col-md-8">
-							<h6>Поведение сноубордиста на склоне – правила FIS.</h6>
-							<p>Сноуборд, как и любой другой вид спорта, связан с риском. Правила FIS применяются ко всем лыжникам и сноубордистам, их предназначение – предотвращение несчастных случаев на склоне. Каждый спортсмен обязан хорошо знать и соблюдать эти правила, ведь хорошие манеры на склоне и безопасность всегда приветствуются!</p>
+							<h6>Поведение лыжника на склоне – правила FIS.</h6>
+							<p>Горные лыжи, как и любой другой вид спорта, связан с риском. Правила FIS применяются ко всем лыжникам и сноубордистам, их предназначение – предотвращение несчастных случаев на склоне. Каждый спортсмен обязан хорошо знать и соблюдать эти правила, ведь хорошие манеры на склоне и безопасность всегда приветствуются!</p>
 						</div>
 						<div class="col-md-4">
 							<ul>							
-							<li class="doc"><a href="#">Правила</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/povedenie-lyzhnika-na-sklone-pravila-fis.html">Правила</a></li>
 							</ul>
 						</div>
 					</div>
@@ -281,14 +267,14 @@
 					<!--Подтемы урока -->
 					<div class="row">
 						<div class="col-md-8">
-							<h6>Учимся кататься на склоне и пользоваться подъемником.</h6>
-							<p>Как пользоваться подъемником, как управлять сноубордом, как двигаться по склону, как менять направление движения и регулировать скорость.</p>
+							<h6>Как тормозить и контролировать скорость на лыжах в «плуге».</h6>
+							<p>Как тормозить и контролировать скорость в «плуге»? Научит основам и покажет упражнения инструктор по горным лыжам Евгений Моисеенко.</p>
 						</div>
 						<div class="col-md-4">
 							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Использование подъемника</a></li>
-							<li class="doc"><a href="#">Катание на склоне</a></li>
+							<li class="slide"><a target="_blank" href="http://slenergy.ru/stojjka-v-pluge-i-tormozhenie.html">Видеоурок</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/stojjka-v-pluge-i-tormozhenie.html#s2">Как тормозить в «плуге»</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/stojjka-v-pluge-i-tormozhenie.html#s3">Как контролировать скорость на склоне</a></li>
 							</ul>
 						</div>
 					</div>
@@ -296,38 +282,37 @@
 					<!--Подтемы урока -->
 					<div class="row">
 						<div class="col-md-8">
-							<h6>Повороты на склоне с перекантовкой.</h6>
-							<p>Как скатываться вниз по склону, перенося вес тела и делая повороты с перекантовкой в направленной стойке.</p>
+							<h6>Как пользоваться подъемником на лыжах и поворачивать в «плуге».</h6>
+							<p>В этом уроке вы узнаете о том, как пользоваться бугельным подъемником и делать повороты в «плуге».</p>
 						</div>
 						<div class="col-md-4">
 							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Осваиваем поворот</a></li>
-							<li class="doc"><a href="#">Поворот с перекантовкой</a></li>
+							<li class="slide"><a target="_blank" href="http://slenergy.ru/kak-polzovatsya-podemnikom-i-delat-povoroty-v-pluge.html">Видеоурок</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/stojjka-v-pluge-i-tormozhenie.html#s1">Как пользоваться подъемником</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/stojjka-v-pluge-i-tormozhenie.html#s3">Как делать повороты на склоне с помощью стойки «плуг»</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 			<hr class="lessons-hr">
-			<!--Тема урока Фристайл freestyle-->
-			<div class="row" id='freestyle'>
+			<!--Тема урока параллельные parallel-->
+			<div class="row" id='parallel'>
 				<div class="col-md-3">
-					<h5>Фристайл</h5>
-					<p>Прыжки с трамплина, вращения на склоне и другие элементы.</p>
+					<h5>Учимся кататься на параллельных лыжах</h5>			
 				</div>
 				<div class="col-md-9">
 					<!--Подтемы урока -->
 					<div class="row">
 						<div class="col-md-8">
-							<h6>Базовые элементы фристайла на плоскости.</h6>
-							<p>В этой рубрике инструктор Илья Косяченко вместе с учеником Андреем Цуренко расскажет что такое фристайл и покажет основные элементы, такие как трюки олли и нолли, которые помогут вам освоить сноуборд.</p>
+							<h6>Катимся поперек склона в стойке траверса и делаем боковое соскальзывание.</h6>
+							<p>Инструктор расскажет, как передвигаться поперек склона в стойке траверса и выполнять боковое соскальзывание вниз по склону.</p>
 						</div>
 						<div class="col-md-4">
 							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Что такое фристайл?</a></li>
-							<li class="doc"><a href="#">Выполняем основные элементы</a></li>
+							<li class="slide"><a target="_blank" href="http://slenergy.ru/dvizhenie-traversom-i-bokovoe-soskalzyvanie.html">Видеоурок</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/dvizhenie-traversom-i-bokovoe-soskalzyvanie.html#s2">Как двигаться в стойке траверса</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/dvizhenie-traversom-i-bokovoe-soskalzyvanie.html#s3">Как выполнять боковое соскальзывание на склоне</a></li>
 							</ul>
 						</div>
 					</div>
@@ -335,13 +320,14 @@
 					<!--Подтемы урока -->
 					<div class="row">
 						<div class="col-md-8">
-							<h6>Трюки на вращения на склоне.</h6>
-							<p>На этом уроке вместе с инструктором Ильей Косяченко учимся выполнять трюки на плоскости – вращения 180 и 360 градусов, а также nose и tail roll.</p>
+							<h6>Выполняем карвинговый поворот начального уровня.</h6>
+							<p>Инструктор расскажет, как правильно подготовиться к выполнению карвингового поворота и делать связку таких поворотов.</p>
 						</div>
 						<div class="col-md-4">
 							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Трюки на вращение</a></li>
+							<li class="slide"><a target="_blank" href="http://slenergy.ru/karvingovyjj-povorot-nachalnogo-urovnya.html">Видеоурок</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/tryuki-na-vrashheniya-na-snouborde-na-plos.html/">Как подготовиться и выполнить карвинговый поворот</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/karvingovyjj-povorot-nachalnogo-urovnya.html#s2">Как выполнять карвинговые повороты на склоне</a></li>
 							</ul>
 						</div>
 					</div>
@@ -349,154 +335,34 @@
 					<!--Подтемы урока -->
 					<div class="row">
 						<div class="col-md-8">
-							<h6>Трюки на трамплинах.</h6>
-							<p>Как правильно подъезжать к трамплинам и как с них выпрыгивать, как должен быть распределен вес и как приземляться после прыжка. А также научитесь делать прямой прыжок с трамплина и брать грэбы.</p>
+							<h6>Выполняем укол палкой и базовый поворот на параллельных лыжах большого радиуса.</h6>
+							<p>На этом уроке вы узнаете, что такое укол палкой, и научитесь делать базовый поворот на параллельных лыжах большого радиуса вместе с Евгением Моисеенко.</p>
 						</div>
 						<div class="col-md-4">
 							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Основные правила прыжков</a></li>
-							<li class="doc"><a href="#">Что такое грэбы?</a></li>
-							</ul>
-						</div>
-					</div>
-					<hr class="lessons-hr">
-					<!--Подтемы урока -->
-					<div class="row">
-						<div class="col-md-8">
-							<h6>Трюки на сноуборде: 180, 360, 540 на трамплине.</h6>
-							<p>На четвертом уроке по фристайлу инструктор Илья Косяченко как делать трюки на вращения на 180, 360 540 градусов с трамплина.</p>
-						</div>
-						<div class="col-md-4">
-							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Советы</a></li>
+							<li class="slide"><a target="_blank" href="http://slenergy.ru/ukol-palkojj-i-bazovyjj-povorot-na-parallelnykh-lyzhakh-bolshogo-radiusa-2.html">Видеоурок</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/ukol-palkojj-i-bazovyjj-povorot-na-parallelnykh-lyzhakh-bolshogo-radiusa-2.html#s1">Как правильно сделать укол палкой</a></li>
+							<li class="doc"><a target="_blank" href="http://slenergy.ru/ukol-palkojj-i-bazovyjj-povorot-na-parallelnykh-lyzhakh-bolshogo-radiusa-2.html#s2">Как выполнять базовый поворот на параллельных лыжах большого радиуса с уколом палкой</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<hr class="lessons-hr">
-			<!--Тема урока Cноупласт и джиббинг jibbing-->
-			<div class="row" id='jibbing'>
-				<div class="col-md-3">
-					<h5>Cноупласт и джиббинг</h5>
-					<p>Трюки на различных фигурах.</p>
-				</div>
-				<div class="col-md-9">
-					<!--Подтемы урока -->
-					<div class="row">
-						<div class="col-md-8">
-							<h6>Знакомство с катанием по сноупласту. <br>Основы джиббинга.</h6>
-							<p>Сноупласт вместо снега и как по нему кататься? Что такое джиббинг и основные его элементы, такие как трюки 50/50 и boardslide.</p>
-						</div>
-						<div class="col-md-4">
-							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Что такое джиббинг?</a></li>
-							<li class="doc"><a href="#">Выполняем основные элементы</a></li>
-							</ul>
-						</div>
-					</div>
-					<hr class="lessons-hr">
-					<!--Подтемы урока -->
-					<div class="row">
-						<div class="col-md-8">
-							<h6>Фристайл. Батут. Квотер. Трамплин.</h6>
-							<p>В этой рубрике рассказываем о выполнении серии трюков на небольшом трамплине и в квотере.</p>
-						</div>
-						<div class="col-md-4">
-							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Трюки с трамплина</a></li>
-							<li class="doc"><a href="#">Трюки на квотер-пайпе</a></li>
-							</ul>
-						</div>
-					</div>
-					<hr class="lessons-hr">
-					<!--Подтемы урока -->
-					<div class="row">
-						<div class="col-md-8">
-							<h6>Биг Эйр. Сложные трюки в воздушную подушку.</h6>
-							<p>Мастер-класс от сноубордистов Владивостока по прыжкам в воздушную подушку</p>
-						</div>
-						<div class="col-md-4">
-							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Прыжки в подушку</a></li>
-							<li class="doc"><a href="#">Сложные трюки</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr class="lessons-hr">
-			<!--Тема урока Прогрессивные повороты pro-turns-->
-			<div class="row" id='pro-turns'>
-				<div class="col-md-3">
-					<h5>Прогрессивные повороты</h5>
-				</div>
-				<div class="col-md-9">
-					<!--Подтемы урока -->
-					<div class="row">
-						<div class="col-md-8">
-							<h6>Активные повороты с перекантовкой &mdash; вертикальная работа.</h6>
-							<p>Как подготовиться к выполнению поворотов с разгрузками и как правильно их выполнять.</p>
-						</div>
-						<div class="col-md-4">
-							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Поворот с разгрузкой</a></li>
-							<li class="doc"><a href="#">Поворот с разгрузкой вверх</a></li>
-							</ul>
-						</div>
-					</div>
-					<hr class="lessons-hr">
-					<!--Подтемы урока -->
-					<div class="row">
-						<div class="col-md-8">
-							<h6>Короткие повороты.</h6>
-							<p>Мы подошли вплотную к карвингу. На этом уроке мы разберем карвинговые повороты с заклоном.</p>
-						</div>
-						<div class="col-md-4">
-							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Упражнения для тренировки</a></li>
-							<li class="doc"><a href="#">Выполняем короткий поворот</a></li>
-							</ul>
-						</div>
-					</div>
-					<hr class="lessons-hr">
-					<!--Подтемы урока -->
-					<div class="row">
-						<div class="col-md-8">
-							<h6>Карвинговые повороты с заклоном.</h6>
-							<p>Мы подошли вплотную к карвингу. На этом уроке мы разберем карвинговые повороты с заклоном.</p>
-						</div>
-						<div class="col-md-4">
-							<ul>
-							<li class="slide"><a href="#">Видеоурок</a></li>
-							<li class="doc"><a href="#">Тренируемся делать заклон</a></li>
-							<li class="doc"><a href="#">Полноценный поворот с заклоном</a></li>
-							</ul>
-						</div>
-					</div>					
-				</div>
-			</div>
-
 		</div>
 
 		<!--carving-->
 		<div class="container">
-			<div class="row carving block-center">
+			<div class="row carving block-center" id="carving">
 				<div class='col-md-6' style='z-index:1;'>
-					<h1>НОВОЕ В СЕЗОНЕ 2014-2015</h1>
-					<h2>КАРВИНГ</h2>
-					<p>Следите за страницей с новыми уроками  школы сноубординга, которая будет обновляться в течение сезона.</p>
+					<h1>НОВЫЕ УРОКИ</h1>
+					<h1>В СЕЗОНЕ 2014–2015</h1>					
+					<p>Следи за страницей с новыми уроками горнолыжной школы, которая будет обновляться в течение сезона.</p>
+					<form action='http://slenergy.ru/%D1%88%D0%BA%D0%BE%D0%BB%D0%B0-%D1%81%D0%BD%D0%BE%D1%83%D0%B1%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B3%D0%B0/'>
 					<button class="button">ПЕРЕЙТИ</button>
+					</form>
 				</div>
 				<div class='col-md-6 hidden-xs hidden-sm'>
-					<img src="./img/carving-rider.png" align='right'>
+					<img src="./img/orange.png" align='right'>
 				</div>
 
 			</div>
@@ -509,15 +375,14 @@
 				<div class="col-md-6">
 					<img src="./img/icon_question.png">
 					<h4>Задай вопрос инструктору</h4>
-					<p style="
-    margin-bottom: 39px;">На вопросы отвечает инструктор международной категории Илья Косяченко. Можно найти ответ среди готовых вопросов, задать собственный или даже прислать видео со своим катанием. </p>
-					<a href="#">Задать вопрос</a>
+					<p>На вопросы отвечает инструктор по горным лыжам. Можно найти ответ среди готовых вопросов, задать собственный или даже прислать видео со своим катанием, и инструктор постарается дать рекомендации и ответить на вопросы. </p>
+					<a target="_blank" href="http://slenergy.ru/forum/viewtopic.php?f=55&t=242">Задать вопрос</a>
 				</div>
 				<div class="col-md-6">
 					<img src="./img/icon_map.png">
 					<h4>Горнолыжные склоны Приморья</h4>
 					<p>На странице горнолыжных склонов можно познакомиться с работой и характеристиками трасс, понять, что можно взять в прокате и по каким ценам, а также где найти жилье недалеко от выбранных трасс.</p>
-					<a href="#">Посмотреть склоны</a>
+					<a target="_blank" target="_blank" href="http://slenergy.ru/gornolyzhnye-sklony-gde-katatsya-gde-o/">Посмотреть склоны</a>
 				</div>
 			</div>
 		</div>
@@ -526,19 +391,19 @@
 		<footer>
 			<p>Новости, обновления и актуальная информация в наших сетях</p>
 			<div class="social-icons vk">
-				<a href="#"></a>
+				<a target="_blank" href="https://vk.com/slenergy"></a>
 			</div>
 			<div class="social-icons fb">
-				<a href="#"></a>
+				<a target="_blank" href="https://www.facebook.com/slenergy.extreme"></a>
 			</div>
 			<div class="social-icons ok">
-				<a href="#"></a>
+				<a target="_blank" href="http://www.odnoklassniki.ru/slenergy.ru?st._aid=ExternalGroupWidget_OpenGroup"></a>
 			</div>
 			<div class="social-icons inst">
-				<a href="#"></a>
+				<a target="_blank" href="http://instagram.com/slenergy"></a>
 			</div>
 			<div class="social-icons tw">
-				<a href="#"></a>
+				<a target="_blank" href="https://www.youtube.com/user/slenergyextreme"></a>
 			</div>
 		</footer>
 	</body>
