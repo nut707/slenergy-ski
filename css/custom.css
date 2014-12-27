@@ -53,6 +53,7 @@ header{
 	padding: 0;
 	z-index: 99;
 	text-align: center;
+	font-size: 150%;
 }
 
 .up:focus{
@@ -178,7 +179,7 @@ h4{
 }
 
 p{
-	font-size: 110%;
+	font-size: 100%;
 	text-align: left;
 }
 
@@ -198,7 +199,7 @@ p{
 }
 a{
 	color: #d30027;
-	font-size: 80%;
+	font-size: 85%;
 }
 a:hover{
 	color: #ed002c;
@@ -368,7 +369,7 @@ header .tw{
 	font-size: 2em;
 	font-family: 'Proxima Nova', Arial, Ubuntu, sans-serif;
 	color: white;
-	border: 3px solid #d30027;
+	border: 2px solid #d30027;
 	border-radius: 0;
 	padding: 5px;
 	background-color: #d30027;
@@ -379,7 +380,7 @@ header .tw{
 	color: white;	
 }
 .dropdown-toggle:hover{
-	background-color: white;
+	background-color: transparent;
 	color: #d30027;
 }
 /*Затемнение кнопки, когда открыто меню*/
@@ -392,23 +393,16 @@ header .tw{
 .dropdown-menu{
 	width: 100%;
 	text-align: left;
-	font-size: 1em;
 	color: #d30027;
 	border: 2px solid #d30027;
 	border-radius: 0;
+	padding: 0;
 }
 .dropdown-menu li a{
 	color: #d30027;
 	font-family: 'Open Sans Semibold', Arial, Ubuntu, sans-serif;
 	text-transform: uppercase;
 	font-size: 130%;
-}
-.dropdown-hr{
-	border: none; /* Убираем границу для браузера Firefox */
-	color: #d30027; /* Цвет линии для остальных браузеров */
-	background-color: #d30027; /* Цвет линии для браузера Firefox и Opera */
-	margin: 0px 5px;
-	height: 2px;
 }
 .glyphicon-hand-down{
 	padding-left: 10px;
@@ -419,13 +413,13 @@ header .tw{
 /*Relative school*/
 @media (min-width: 992px){
 	.relative-margin{
-		margin-top: -25px;
+		margin-top: -55px;
 	}
 	.arrow-divider{
-		margin-top: -85px;
+		margin-top: -65px;
 	}
-	.sm{
-		margin-top:-65px;
+	.first{
+		margin-top:-45px;
 	}
 }
 @media(max-width: 767px){
