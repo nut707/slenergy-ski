@@ -24,7 +24,7 @@ h4,h6{
 }
 body
 {
-	background: url(../img/background.png) no-repeat center top;
+	background: url(../img/background.jpg) no-repeat center top;
 	-webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -267,7 +267,8 @@ footer{
 }
 footer p{
 	text-align: center;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
+	font-size: 120%;
 }
 /*social icons buttons*/
 footer .social-icons,footer .social-icons a{
