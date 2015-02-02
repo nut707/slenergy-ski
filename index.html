@@ -18,6 +18,10 @@
 				$('a[href^="#"]').click(function(){
 					var target = $(this).attr('href');
 					$('html, body').animate({scrollTop: $(target).offset().top}, 800);
+					<!--Шоб меню дропдаун закрывался)-->
+					if($(this).parent().parent().attr('class')=='dropdown-menu'){
+						$('.dropdown-toggle').dropdown('toggle');	
+					}
 					return false;
 				});
 			})
@@ -30,7 +34,12 @@
 					else 
 						{$('#scroller').fadeOut();}
 				});
-			$('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 800); return false;});
+			$('#scroller').click(function () {
+				$('body,html').animate({scrollTop: 0}, 800); return false;
+			});
+			$('.dropdown').on('show.bs.dropdown', function () {
+				$('html, body').animate({scrollTop:$(this).offset().top-10},400)
+			})
 		});
 		</script>
 		<title>Slenergy</title>
@@ -46,7 +55,7 @@
 							<img src="./img/logo.png"/>
 						</a>
 					</div>
-					<div class="col-md-4 col-sm-6 col-md-offset-4">
+					<div class="col-md-4 col-sm-6 hidden-xs col-md-offset-4">
 						<!--Social buttons-->
 						<div class="social-icons vk">
 							<a target="_blank" href="https://vk.com/slenergy"></a>
@@ -83,7 +92,7 @@
 					<div class="dropdown">
 						<button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
 							ВЫБРАТЬ ТЕМУ УРОКА
-							<span class='glyphicon glyphicon-hand-down' aria-hidden="true"></span>
+							<span class='glyphicon glyphicon-hand-left' aria-hidden="true"></span>
 						</button>
 						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="#equipment">Подбор снаряжения</a>
